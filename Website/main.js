@@ -14,61 +14,100 @@ function init(){
   camera.position.y = 100;
   camera.position.z = 1000;
 
-  renderer = new THREE.WebGLRenderer({antialias: true});
-  renderer.setSize(window.innerWidth,window.innerHeight);
-  document.body.appendChild(renderer.domElement);
+  // renderer = new THREE.WebGLRenderer({antialias: true});
+  
+  renderer = new THREE.WebGLRenderer({
+    canvas: document.querySelector('#bg'),
+  })
+  
+  // renderer.setSize(window.innerWidth,window.innerHeight);
+  renderer.setSize(500,400);
+  renderer.setPixelRatio(window.devicePixelRatio);
+
+  // document.body.appendChild(renderer.domElement);
+  renderer.render(scene,camera);
+
   
   const controls = new OrbitControls(camera,renderer.domElement);
+  console.log(controls);
   // controls.addEventListener('change',renderer);
 
   const hlight = new THREE.AmbientLight(0x404040,100);
 
-  scene.add(hlight);
+  // scene.add(hlight);
 
+  // scene.background = 0x999999;
   const pointLight = new THREE.PointLight(0xffffff);
-  pointLight.position.set(200,400,200);
-  scene.add(pointLight);
+  pointLight.position.set(70,160,0);
+  // scene.add(pointLight);
 
-  const lightHelper = new THREE.PointLightHelper(pointLight);
-const gridHelper = new THREE.GridHelper(200,50);
-scene.add(lightHelper,gridHelper);
+  var hemiLight = new THREE.HemisphereLight(0x000000,0xffffff,20);
+  // scene.add(hemiLight);
 
-  // const directionalLight = new THREE.DirectionalLight(0xffffff,100);
-  // directionalLight.position.set(0,1,0);
-  // directionalLight.castShadow = true;
-  // scene.add(directionalLight);
+  scene.add(new THREE.AxesHelper(500));
+  // const lightHelper = new THREE.PointLightHelper(pointLight);
+  const gridHelper = new THREE.GridHelper(200,50);
+  // scene.add(lightHelper,gridHelper);
+  scene.add(gridHelper);
 
+  const directionalLight = new THREE.DirectionalLight(0xffffff,10);
+  directionalLight.position.set(1,1,0);
+  directionalLight.castShadow = true;
+  const helper = new THREE.DirectionalLightHelper( directionalLight);
+  scene.add(helper,directionalLight);
+
+  //background color
+  // scene.background = new THREE.Color( 0x777777 );
+  
   // const light = new THREE.PointLight(0xc4c4c4,10);
   // light.position.set(0,300,500);
   // scene.add(light);
-
+  
   // const light2 = new THREE.PointLight(0xc4c4c4,10);
   // light2.position.set(500,100,100);
   // scene.add(light2);
-
+  
   // const light3 = new THREE.PointLight(0xc4c4c4,10);
   // light3.position.set(0,100,500);
   // scene.add(light3);
-
+  
   // const light4 = new THREE.PointLight(0xc4c4c4,10);
   // light4.position.set(-500,300,100);
   // scene.add(light4);
   
   
+  // const spaceTexture = new THREE.TextureLoader().load('./images/black.jpg');
+  // scene.background = spaceTexture;
 
   let loader = new GLTFLoader();
+  let desk;
+  let i = 0;
   loader.load('scene.gltf',function(gltf){
-    const desk = gltf.scene.children[0];
-    console.log(desk);
-    desk.scale.set(140,140,140);
+    desk = gltf.scene.children[0];
+    // console.log(desk);
+    desk.scale.set(70,60,55);
+    // desk.position.set(0,0,0);
+    // desk.rotation.z += 30;
+
+    desk.rotation.x +=0.3;
+    desk.rotation.y +=0.3;
+    desk.rotation.z +=-2.1;
+
+    // desk.rotation.x +=i;
+    // desk.rotation.y +=i;
+    // desk.rotation.z +=-i;
+ 
     scene.add(gltf.scene);
     animate();
   });
 }
 
+
 function animate(){
 
+
   renderer.render(scene,camera);
+  // console.log(scene);
   requestAnimationFrame(animate);
 }
 
@@ -127,8 +166,6 @@ init();
 
 // Array(200).fill().forEach(addStar);
 
-// const spaceTexture = new THREE.TextureLoader().load('./images/space.jpg');
-// scene.background = spaceTexture;
 
 // const shivamTexture = new THREE.TextureLoader().load('./images/shivam.jpg');
 
