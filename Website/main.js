@@ -3,10 +3,11 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
-let scene, camera, renderer;
+let scene, camera, renderer,desk;
+let deskSwitch = false;
 function init(){
   scene = new THREE.Scene();
-  scene.background = new THREE.Color(0xdddddd);
+  scene.background = new THREE.Color(0x414a4c);
 
   camera = new THREE.PerspectiveCamera(40,window.innerWidth/window.innerHeight,1,5000);
   camera.rotation.y = 45/180 * Math.PI;
@@ -80,7 +81,7 @@ function init(){
   // scene.background = spaceTexture;
 
   let loader = new GLTFLoader();
-  let desk;
+  
   let i = 0;
   loader.load('scene.gltf',function(gltf){
     desk = gltf.scene.children[0];
@@ -98,6 +99,7 @@ function init(){
     // desk.rotation.z +=-i;
  
     scene.add(gltf.scene);
+    deskSwitch = true;
     animate();
   });
 }
@@ -105,6 +107,9 @@ function init(){
 
 function animate(){
 
+  if(deskSwitch){
+    // desk.rotation.z +=0.005;
+  }
 
   renderer.render(scene,camera);
   // console.log(scene);

@@ -1,7 +1,19 @@
+
+.desk-c{
+    width: 100%;
+    /* position: absolute;
+    top: 20%; */
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    /* display: none; */
+}
+
+h1{
+    color: #000;
+}
 canvas{
-    position: absolute;
-    top: 20;
-    right: 0;
+    
     border:2px solid black;
     background-color: teal;
 }
@@ -25,4 +37,38 @@ h1{
 
 p{
     grid-column: 2/11;
+}
+
+/* actual website style from here */
+.landing-c{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    /* background-color: teal; */
+}
+
+.landing-parts{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    
+}
+
+.intro-c{
+    font-size: 20px;
+    padding: 0 80px;
+}
+
+.pic-dimension-c{
+    background-color: tan;
+    width: 600px;
+    height: 400px;
+    background: url('../Website/images/shivam.jpg');
+    background-size: cover;
+    box-shadow: 1.2rem 1.2rem 0.4rem rgba(0, 0, 0, .5);
+
 }

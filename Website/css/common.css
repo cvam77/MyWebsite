@@ -37,7 +37,7 @@ html{
 /* Navigation Section */
 .navigation{
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     display: flex;
@@ -45,6 +45,7 @@ html{
     align-items: baseline;
     padding: 1.8rem 8rem;
     z-index: 3;
+    background-color: #E1C699;
     
     /* transition: 0.7s; */
 }
@@ -75,13 +76,13 @@ html{
 
 .navigation ul li a {
     position: relative;
-    margin: 0.1rem 1.4rem;
+    margin: 0.1rem 2.8rem;
     text-decoration: none;
-    color: #F58A07;
+    color: #000;
     letter-spacing: 0.2rem;
     font-weight: lighter;
     font-size: 2.4rem;
-    transition: all 350ms ease-in;
+    transition: all 0s ease-in;
 }
 
 .navigation ul li .current{
@@ -91,10 +92,11 @@ html{
 }
 
 .navigation ul li a:hover {
-    background: #3d59ab;
-    transform: scaleX(2);
+    
+    /* transform: scaleX(2); */
     border-radius: 1rem;
-    padding: 1rem;
+    color: #fff;
+
 }
 
 /* .navigation.sticky .logo,
@@ -118,10 +120,11 @@ html{
     top: 50%;
     right: 5%;
     transform: translateY(-50%);
+    padding: 4rem 0rem;
 }
 
 .navigation .hamburger-icon .line{
-    background-color: #ffffff;
+    background-color: #000;
     width: 3rem;
     height: 0.5rem;
     margin: 0.5rem;
@@ -131,6 +134,11 @@ html{
 
 @media screen and (max-width: 1150px)
 {
+    
+    .navigation{
+        height: 7rem;
+    }
+
     .navigation .logo {
        
         float: none;
@@ -154,6 +162,7 @@ html{
         justify-content: space-evenly;
         overflow: hidden;
         transition: all .5s ease-in-out;
+        color: #fff;
 
     }
 
@@ -163,6 +172,7 @@ html{
     } */
     .navigation ul li a{
         font-size: 2.5rem;
+        color: #fff;
     }
 
     .navigation :checked + .logo{
@@ -176,6 +186,7 @@ html{
 
     .navigation .hamburger-icon{
         display: block;
+        
     }
 
     .navigation :checked ~ .hamburger-icon .line:nth-child(1){
