@@ -45,7 +45,7 @@ html{
     align-items: baseline;
     padding: 1.8rem 8rem;
     z-index: 3;
-    background-color: #E1C699;
+    /* background-color: #E1C699; */
     
     /* transition: 0.7s; */
 }

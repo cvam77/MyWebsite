@@ -30,7 +30,7 @@ function init(){
 
   
   const controls = new OrbitControls(camera,renderer.domElement);
-  console.log(controls);
+  // console.log(controls);
   // controls.addEventListener('change',renderer);
 
   const hlight = new THREE.AmbientLight(0x404040,100);
