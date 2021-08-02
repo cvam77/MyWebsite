@@ -186,6 +186,24 @@ function init(){
 
 
 window.addEventListener('scroll', function() {
+
+  if(window.scrollY>0)
+  {
+    document.querySelector('.scroll-slow-c').style.visibility='hidden';
+    document.querySelector('.scroll-slow-c').style.transform='translateY(-10px)';
+
+    document.querySelector('.projects-title-contain').style.opacity='0';
+    // document.querySelector('.projects-title-contain').style.transform='translateY(-1px)';
+    
+    
+  } else{
+    document.querySelector('.scroll-slow-c').style.opacity='1';
+    document.querySelector('.scroll-slow-c').style.transform='translateY(0px)';
+
+    document.querySelector('.projects-title-contain').style.opacity='1';
+    document.querySelector('.projects-title-contain').style.transform='translateY(0px)';
+
+  }
   translate(5,10,'one',1)
   translate(15,21,'two',2)
   translate(25,30,'three',1)
