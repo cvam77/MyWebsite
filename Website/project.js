@@ -59,11 +59,11 @@ function init(){
   cameraFolder.add(camera.position,"x",-200,200);
   cameraFolder.add(camera.position,"y",-200,200);
   cameraFolder.add(camera.position,"z",-200,200);
-  cameraFolder.open();
+  // cameraFolder.open();
 
   // plane 1
 
-  const shivamTexture = new THREE.TextureLoader().load('./images/zayve-para.png');
+  const shivamTexture = new THREE.TextureLoader().load('./images/zayvebanner.png');
 
   const geometry = new THREE.PlaneGeometry( 12,2 );
   const material = new THREE.MeshBasicMaterial( {color: 0xffffff, side: THREE.DoubleSide, map: shivamTexture} );
@@ -82,15 +82,17 @@ function init(){
   planeFolder1.add(plane1.rotation,"x",-Math.PI*2,Math.PI*2);
   planeFolder1.add(plane1.rotation,"y",-Math.PI*2,Math.PI*2);
   planeFolder1.add(plane1.rotation,"z",-Math.PI*2,Math.PI*2);
-  planeFolder1.open();
+  // planeFolder1.open();
   // gui.add(plane.position,"x",0,200);
   // gui.add(plane.rotation,"y",0,Math.PI*2);
   // gui.add(plane.rotation,"z",0,Math.PI*2);
   // gui.add(plane.scale,"x",0,200);
 
   // plane 2
+  const virtualDeadlineTexture = new THREE.TextureLoader().load('./images/virtDeadline.png');
+
   const geometry2 = new THREE.PlaneGeometry( 12,2 );
-  const material2 = new THREE.MeshBasicMaterial( {color: 0x0000ff, side: THREE.DoubleSide, map: shivamTexture} );
+  const material2 = new THREE.MeshBasicMaterial( {color: 0xffffff, side: THREE.DoubleSide, map: virtualDeadlineTexture} );
   const plane2 = new THREE.Mesh( geometry2, material2 );
   scene.add( plane2 );
   plane2.position.setX(-4.5);
@@ -107,7 +109,7 @@ function init(){
   planeFolder2.add(plane2.rotation,"x",-Math.PI*2,Math.PI*2);
   planeFolder2.add(plane2.rotation,"y",-Math.PI*2,Math.PI*2);
   planeFolder2.add(plane2.rotation,"z",-Math.PI*2,Math.PI*2);
-  planeFolder2.open();
+  // planeFolder2.open();
   
   // const domEvents = new THREEx.DomEvents();
   // var domEvents = new THREEx.DomEvents(camera, renderer.domElement)
@@ -117,19 +119,65 @@ function init(){
   // })
 
   //plane 3
-  const material3 = new THREE.MeshBasicMaterial( {color: 0xff0000, side: THREE.DoubleSide, map: shivamTexture} );
+  const websiteTexture = new THREE.TextureLoader().load('./images/website.png');
+
+  const material3 = new THREE.MeshBasicMaterial( {color: 0xffffff, side: THREE.DoubleSide, map: websiteTexture} );
   const plane3 = new THREE.Mesh( geometry, material3 );
   scene.add( plane3 );
   plane3.position.setX(3);
   plane3.position.setY(3);
   plane3.position.setZ(20);
 
-  const material4 = new THREE.MeshBasicMaterial( {color: 0x00ff00, side: THREE.DoubleSide, map: shivamTexture} );
+  //plane 4
+  const classcollabTexture = new THREE.TextureLoader().load('./images/classcollab.png');
+
+  const material4 = new THREE.MeshBasicMaterial( {color: 0xffffff, side: THREE.DoubleSide, map: classcollabTexture} );
   const plane4 = new THREE.Mesh( geometry, material4 );
   scene.add( plane4 );
   plane4.position.setX(-3);
   plane4.position.setY(-3);
   plane4.position.setZ(30);
+
+  //plane 5
+  const conferenceTexture = new THREE.TextureLoader().load('./images/conference.png');
+
+  const material5 = new THREE.MeshBasicMaterial( {color: 0xffffff, side: THREE.DoubleSide, map: conferenceTexture} );
+  const plane5 = new THREE.Mesh( geometry, material5 );
+  scene.add( plane5 );
+  plane5.position.setX(4.5);
+  plane5.position.setY(3);
+  plane5.position.setZ(40);
+
+  //plane 6
+
+  const watchmanTexture = new THREE.TextureLoader().load('./images/watchman.png');
+
+  const material6 = new THREE.MeshBasicMaterial( {color: 0xffffff, side: THREE.DoubleSide, map: watchmanTexture} );
+  const plane6 = new THREE.Mesh( geometry, material6 );
+  scene.add( plane6 );
+  plane6.position.setX(3);
+  plane6.position.setY(-3);
+  plane6.position.setZ(50);
+
+  if (window.matchMedia('screen and (max-width: 900px)').matches) {
+    plane1.position.setX(0);
+    plane1.position.setY(1);
+
+    plane2.position.setX(0);
+    plane2.position.setY(-1);
+
+    plane3.position.setX(0);
+    plane3.position.setY(1);
+
+    plane4.position.setX(0);
+    plane4.position.setY(-1);
+
+    plane5.position.setX(0);
+    plane5.position.setY(1);
+
+    plane6.position.setX(0);
+    plane6.position.setY(-1);
+  }
 
   Array(200).fill().forEach(addStar);
 
@@ -142,6 +190,8 @@ window.addEventListener('scroll', function() {
   translate(15,21,'two',2)
   translate(25,30,'three',1)
   translate(35,40,'four',2)
+  translate(45,50,'five',1)
+  translate(55,60,'watchman',2)
   
 })
 
@@ -150,14 +200,17 @@ function translate(start, end, divname, order){
   
     if(camera.position.z > start && camera.position.z < end )
     {
-      document.querySelector(`.each-project.${divname}`).style.transform = 'translateX(0px)';
+      document.querySelector(`.each-project.${divname}`).style.transform = 'translateY(0px)';
+      document.querySelector(`.each-project.${divname}`).style.opacity = '1';
     } else{
       if(order === 1)
       {
-        document.querySelector(`.each-project.${divname}`).style.transform = 'translateX(-1000px)';
+        document.querySelector(`.each-project.${divname}`).style.transform = 'translateY(-100px)';
+        document.querySelector(`.each-project.${divname}`).style.opacity = '0';
       } else if(order == 2)
       {
-        document.querySelector(`.each-project.${divname}`).style.transform = 'translateX(1000px)';
+        document.querySelector(`.each-project.${divname}`).style.transform = 'translateY(100px)';
+        document.querySelector(`.each-project.${divname}`).style.opacity = '0';
 
       }
     }
