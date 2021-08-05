@@ -1,0 +1,135 @@
+
+.empty-div{
+    height: 64px;
+}
+
+.zayve-main-c{
+    letter-spacing: 1px; 
+}
+
+.zayvetitle-github-question-c{
+    background-color: #f5f5f5;
+    text-align: center;
+    width: 100%;
+    padding: 16px 0;
+
+}
+
+.zayve-main-title{
+    font-size: 48px;
+    
+}
+
+.zayve-landing .github-link{
+    font-size: 20px;
+}
+
+.question-zayve{
+    font-size: 32px;
+    margin-top: 8px;
+}
+
+.zayve-intro-c{
+    display: flex;
+    width: 100%;
+    height: 720px; 
+      
+}
+
+.zayve-intro-c.browse{
+    height: 600px; 
+      
+}
+
+.zayve-intro-info-c{
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    background-color: #FFCBA4;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.zayve-intro-info-c.browse{
+    background-color: #BF875F;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.zayve-intro-info-c.browse span{
+    color: #445525;
+}
+
+.zayve-intro-info.browse{
+    margin: 16px 0;
+}
+
+.zayve-intro-info{
+    padding: 0 48px;
+}
+.zayve-intro-pic-c{
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 64px 0; */
+}
+
+.zayve-intro-pic-c img{
+    width: 380px;
+    height: 600px;
+    box-shadow: 1.2rem 1.2rem 0.8rem rgba(0, 0, 0, .5);
+}
+
+.zayve-intro-pic-c.browse img{
+    width: 300px;
+    height:500px;
+    box-shadow: 1.2rem 1.2rem 0.8rem rgba(0, 0, 0, .5);
+    
+}
+
+.zayve-in-one-line{
+    font-size: 24px;
+    padding: 64px 128px;
+    background-color: #f8f8ff;
+    text-align: center;
+}
+
+.zayve-feature-row-c{
+    display: flex;
+}
+
+.zayve-feature-row-c .each-feature-c{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.each-feature-c .zayve-feature-info-c{
+    font-size: 28px;
+    font-weight: 700;
+    padding: 48px;
+    text-align: center;
+}
+
+.each-feature-c img{
+    width: 300px;
+    height: 500px;
+}
+
+.each-feature-c.left{
+    background-color: #f5f5dc;
+}
+
+.each-feature-c.right{
+    background-color: #faebd7;
+}
+
