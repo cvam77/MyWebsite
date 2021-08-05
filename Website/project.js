@@ -219,16 +219,20 @@ function translate(start, end, divname, order){
     if(camera.position.z > start && camera.position.z < end )
     {
       document.querySelector(`.each-project.${divname}`).style.transform = 'translateY(0px)';
-      document.querySelector(`.each-project.${divname}`).style.opacity = '1';
+      document.querySelector(`.each-project.${divname}`).style.visibility = 'visible';
+      document.querySelector(`.each-project.${divname}`).style.opacity='1';
     } else{
       if(order === 1)
       {
         document.querySelector(`.each-project.${divname}`).style.transform = 'translateY(-100px)';
-        document.querySelector(`.each-project.${divname}`).style.opacity = '0';
+        document.querySelector(`.each-project.${divname}`).style.opacity='0';
+    
+        document.querySelector(`.each-project.${divname}`).style.visibility='hidden';
       } else if(order == 2)
       {
         document.querySelector(`.each-project.${divname}`).style.transform = 'translateY(100px)';
-        document.querySelector(`.each-project.${divname}`).style.opacity = '0';
+        document.querySelector(`.each-project.${divname}`).style.opacity='0';
+        document.querySelector(`.each-project.${divname}`).style.visibility='hidden';
 
       }
     }
