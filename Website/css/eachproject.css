@@ -261,3 +261,26 @@
     z-index: 1;
     right: -10%;
 } */
+
+/* css code for class collab specifically */
+.each-project-intro-pic-c.classcollab img{
+    width: 600px;
+    height: 600px;  
+}
+
+.each-project-intro-c.class-collab-home-screen img{
+    width: 340px;
+    height: 600px;  
+}
+
+.each-project-intro-c.class-collab-home-screen span{
+    color: blue;
+    font-weight: 700;
+}
+
+
+
+.each-project-intro-c.classcollab span{
+    color: blue;
+    font-weight: 700;
+}
