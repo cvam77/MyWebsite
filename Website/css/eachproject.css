@@ -182,10 +182,6 @@
     height: 400px;
 }
 
-.row-with-three-features .left img{
-    width: 400px;
-    height: 400px;
-}
 
 .row-with-three-features .feature-title-c{
     text-align: center;
@@ -204,3 +200,64 @@
     display: flex;
     justify-content: center;
 }
+
+/* css specific for chia uttyler */
+.chiauttyler-c{
+    /* background-color: teal; */
+    height: 800px;
+    width: 100%;
+    position: relative;
+}
+
+.chiauttyler-c video{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    
+}
+
+.nav-c{
+    /* position: relative; */
+    height: 160px;
+    width: 100%;
+    /* top: 100%; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+}
+.chiauttyler-c .nav-c img{
+    height: 100%;
+    width: 800px;
+}
+
+.chiauttyler-c .name-c{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+#uttyler{
+    color: orange;
+    font-size: 24px;
+}
+
+#chia{
+    color: #fff;
+    font-size: 32px;
+    
+}
+
+/* .chiauttyler-c .nav-c img{
+    position: absolute;
+    height: 70px;
+    width: 1200px;
+    top: 100%;
+    z-index: 1;
+    right: -10%;
+} */
