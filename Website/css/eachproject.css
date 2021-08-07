@@ -284,3 +284,10 @@
     color: blue;
     font-weight: 700;
 }
+
+/* css code for conference tracker specifically */
+.each-project-intro-pic-c.ctracker img{
+    width: 500px;
+    height: 600px;  
+}
+
