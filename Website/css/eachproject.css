@@ -177,6 +177,17 @@
 .one-of-three-features.right{
     background-color: #e1c699;
 }
+
+.row-with-three-features.secondrow .one-of-three-features.left{
+    background-color: #fff;
+}
+.row-with-three-features.secondrow .one-of-three-features.middle{
+    background-color: #FFCBA4;
+}
+.row-with-three-features.secondrow .one-of-three-features.right{
+    background-color: #fff;
+}
+
 .row-with-three-features img{
     width: 300px;
     height: 400px;
@@ -289,5 +300,24 @@
 .each-project-intro-pic-c.ctracker img{
     width: 500px;
     height: 600px;  
+}
+
+.row-with-three-features.ctracker img{
+    width: 300px;
+    height: 500px;
+}
+
+#notified{
+    height: 350px;
+    width: 300px;
+}
+
+.row-with-three-features.ctracker .feature-title-c{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 12px;
+    height: 32px;
+    font-weight: 700;
+    /* background-color: tan; */
 }
 
