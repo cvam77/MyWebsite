@@ -150,14 +150,14 @@ function init(){
 
   //plane 6
 
-  const watchmanTexture = new THREE.TextureLoader().load('./images/watchman.png');
+  // const watchmanTexture = new THREE.TextureLoader().load('./images/watchman.png');
 
-  const material6 = new THREE.MeshBasicMaterial( {color: 0xffffff, side: THREE.DoubleSide, map: watchmanTexture} );
-  const plane6 = new THREE.Mesh( geometry, material6 );
-  scene.add( plane6 );
-  plane6.position.setX(3);
-  plane6.position.setY(-3);
-  plane6.position.setZ(50);
+  // const material6 = new THREE.MeshBasicMaterial( {color: 0xffffff, side: THREE.DoubleSide, map: watchmanTexture} );
+  // const plane6 = new THREE.Mesh( geometry, material6 );
+  // scene.add( plane6 );
+  // plane6.position.setX(3);
+  // plane6.position.setY(-3);
+  // plane6.position.setZ(50);
 
   if (window.matchMedia('screen and (max-width: 900px)').matches) {
     plane1.position.setX(0);
@@ -175,11 +175,11 @@ function init(){
     plane5.position.setX(0);
     plane5.position.setY(1);
 
-    plane6.position.setX(0);
-    plane6.position.setY(-1);
+    // plane6.position.setX(0);
+    // plane6.position.setY(-1);
   }
 
-  Array(200).fill().forEach(addStar);
+  Array(1000).fill().forEach(addStar);
 
   animate()
 }
@@ -209,7 +209,7 @@ window.addEventListener('scroll', function() {
   translate(25,30,'three',1)
   translate(35,40,'four',2)
   translate(45,50,'five',1)
-  translate(55,60,'watchman',2)
+  // translate(55,60,'watchman',2)
   
 })
 
@@ -253,11 +253,11 @@ document.body.onscroll = moveCamera
 
 
 function addStar(){
-  const geometry = new THREE.SphereGeometry(0.25,24,24);
+  const geometry = new THREE.SphereGeometry(0.12,24,24);
   const material = new THREE.MeshStandardMaterial({color: 0xffffff})
   const star = new THREE.Mesh(geometry,material);
 
-  const [x,y,z] = Array(3).fill().map(()=> THREE.MathUtils.randFloatSpread(100));
+  const [x,y,z] = Array(3).fill().map(()=> THREE.MathUtils.randFloatSpread(150));
 
   star.position.set(x,y,z);
   scene.add(star);

@@ -53,9 +53,10 @@ p{
 
 /* actual website style from here */
 .landing-c{
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     display: flex;
+    /* margin-top: 70px; */
     /* background-color: teal; */
 }
 
