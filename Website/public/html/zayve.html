@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZayvE</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/eachproject.css">
+    <script  src="https://kit.fontawesome.com/97446b8f60.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navigation">  
+        <input id="toggle-checkbox" type="checkbox">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <!-- <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact Me</a></li> -->
+            
+        </ul>
+  
+        <label for="toggle-checkbox" class="hamburger-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+      </nav>
+
+      <div class="each-project-main-c">
+          <div class="each-project-landing">
+                <div class="empty-div"></div>
+
+                <div class="each-project-title-github-question-c">
+                    <h2 class="each-project-main-title">ZayvE</h2>
+                    <a href="https://github.com/cvam77/ZayvE" ><p class="github-link">Github</p></a>
+                    <p class="question-each-project">What's the easiest way to learn what people around you are interested in?</p>
+                </div>
+                
+                <div class="each-project-intro-c">
+                    <div class="each-project-intro-info-c">
+                        <p class="each-project-intro-info">One way is to use a Google-like platform where you can type in an interest and you get a list of people around you with the same interest. Wouldn't that be awesome? </p>
+                    </div>
+                    <div class="each-project-intro-pic-c">
+                        <img src="../images/zayve/zayvesearch.gif" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <p class="each-project-in-one-line">ZayvE is a social media app that provides exactly the same thing. On top of that, it is also packed with various other features to fulfill its dream of being the best platform that connects people with similar interests.</p>
+
+            <div class="each-project-intro-c browse">
+                <div class="each-project-intro-info-c browse">
+                    <p class="each-project-intro-info browse"><span>Browse</span> to discover what people around you are interested in! </p>
+
+                    <p class="each-project-intro-info browse">If you find someone with similar interests as you, <span>Send</span> them a <span>ZayvE</span>  by tapping on a matching interest!</p>
+                    <p class="each-project-intro-info browse"><span>Receive ZayvE</span>  from people around you who are similar to you</p>
+                </div>
+                <div class="each-project-intro-pic-c browse">
+                    <img src="../images/zayve/zayvesearch.gif" alt="">
+                </div>
+            </div>
+
+            <p class="each-project-in-one-line">ZayvE requests are sent/received not on the basis of accounts, but on the basis of matching interests!</p>
+
+            <div class="each-project-feature-row-c">
+                <div class="each-feature-c left">
+                    <div class="each-project-feature-info-c">
+                        <p class="each-project-feature-info">Users are connected when a ZayvE is accepted!</p>
+                    </div>
+                    <div class="each-project-feature-pic-c">
+                        <img src="../images/zayve/zayveaccept.gif" alt="">
+                    </div>
+                </div>
+
+                <div class="each-feature-c right">
+                    <div class="each-project-feature-info-c">
+                        <p class="each-project-feature-info">Once connected, users can chat with each other!</p>
+                    </div>
+                    <div class="each-project-feature-pic-c">
+                        <img src="../images/zayve/zayvechat.gif" alt="">
+                    </div>
+                </div>
+                
+            </div>
+                  
+      
+        </div>
+
+        <footer>            
+            <div class="footer-bottom">
+              <div class="contact-means-c">
+                <div id="social-logos">
+                  <!-- <a href="#"><span class="fab fa-facebook-f"></span></a> -->
+                  <a href="https://github.com/cvam77"><span class="fab fa-github"></span></a>
+                  <a href="https://www.linkedin.com/in/shivamchaudhary10"><span class="fab fa-linkedin"></span></a>          
+                </div>
+                <div class="contactus-pair">
+                  <span id="font-logo" class="fas fa-envelope"></span>
+                  <h2>schaudhary@patriots.uttyler.edu  </h2>
+                </div>
+              </div>
+                
+              <div class="copyright-c">
+                <p> &copy; 2021 | Shivam Chaudhary</p>
+              </div>
+            </div>
+          </footer>
+
+        <script>
+            var colorGradient = 'linear-gradient(315deg, #0cbaba 0%, #380036 74%)';
+            var textColor = '#fff'
+            //coding the sticky navbar section
+            var header = document.querySelector(".navigation");         
+            header.style.backgroundImage= colorGradient;            
+            //color for nav link
+            // var navLinks = document.querySelectorAll(".navigation ul li a");
+            // navLinks.forEach(navLink=>{
+            //     navLink.style.color = textColor;
+            // })
+
+            //Color for intro info container
+            var introinfoC = document.querySelector(".each-project-intro-info-c");      
+            introinfoC.style.backgroundImage= colorGradient; 
+            introinfoC.style.color=textColor;
+
+            //for footer
+            document.querySelector(".contact-means-c").style.backgroundImage = colorGradient;
+            document.querySelector("footer").style.background = '#000';
+        </script>
+</body>
+</html>

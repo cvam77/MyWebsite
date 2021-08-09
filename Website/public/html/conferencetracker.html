@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+
+    <title>Conference Tracker</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/eachproject.css">
+    <script  src="https://kit.fontawesome.com/97446b8f60.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="navigation">  
+        <input id="toggle-checkbox" type="checkbox">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <!-- <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact Me</a></li> -->
+            
+        </ul>
+  
+        <label for="toggle-checkbox" class="hamburger-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+
+    <div class="each-project-main-c">
+        <div class="each-project-landing">
+              <div class="empty-div"></div>
+
+              <div class="each-project-title-github-question-c">
+                  <h2 class="each-project-main-title">Conference Tracker</h2>
+                  <a href="https://github.com/cvam77/ConferenceTrackingApp" ><p class="github-link">Github</p></a>
+                  <!-- <p class="question-each-project">An app to maintain all of your created/joined conferences at one place!</p> -->
+              </div>
+              
+              <div class="each-project-intro-c">
+                  <div class="each-project-intro-info-c">
+                      <p class="each-project-intro-info">An app to maintain all of your created/joined conferences at one place! </p>
+                  </div>
+                  <div class="each-project-intro-pic-c ctracker">
+                      <img src="../images/ConferenceTracker/conferencetracker.jfif" alt="">
+                  </div>
+              </div>
+        </div>
+
+        <div class="row-with-three-features ctracker">
+            <div class="one-of-three-features left">
+                <div class="feature-title-c ">
+                    <p class="feature-title">Create Conferences</p>
+                </div>
+                <div class="feature-screenshot">
+                    <img src="../images/ConferenceTracker/createconference.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="one-of-three-features middle">
+                <div class="feature-title-c">
+                    <p class="feature-title">Browse them</p>
+                </div>
+                <div class="feature-screenshot">
+                    <img src="../images/ConferenceTracker/browseconference.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="one-of-three-features right">
+                <div class="feature-title-c">
+                    <p class="feature-title">Join them</p>
+                </div>
+                <div class="feature-screenshot">
+                    <img src="../images/ConferenceTracker/joinconference.png" alt="">
+                </div>
+            </div>
+        
+        </div>   
+        
+        <div class="row-with-three-features secondrow ctracker">
+            <div class="one-of-three-features left">
+                <div class="feature-title-c ">
+                    <p class="feature-title">Track Conferences</p>
+                </div>
+                <div class="feature-screenshot">
+                    <img src="../images/ConferenceTracker/trackconferences.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="one-of-three-features middle">
+                <div class="feature-title-c">
+                    <p class="feature-title">Search Them</p>
+                </div>
+                <div class="feature-screenshot">
+                    <img src="../images/ConferenceTracker/searchconference.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="one-of-three-features right">
+                <div class="feature-title-c">
+                    <p class="feature-title">Get Notified</p>
+                </div>
+                <div class="feature-screenshot">
+                    <img src="../images/ConferenceTracker/notified.jpg" alt="" id="notified">
+                </div>
+            </div>
+        
+        </div>  
+      
+    </div>
+
+    <footer>            
+        <div class="footer-bottom">
+          <div class="contact-means-c">
+            <div id="social-logos">
+              <!-- <a href="#"><span class="fab fa-facebook-f"></span></a> -->
+              <a href="https://github.com/cvam77"><span class="fab fa-github"></span></a>
+              <a href="https://www.linkedin.com/in/shivamchaudhary10"><span class="fab fa-linkedin"></span></a>          
+            </div>
+            <div class="contactus-pair">
+              <span id="font-logo" class="fas fa-envelope"></span>
+              <h2>schaudhary@patriots.uttyler.edu  </h2>
+            </div>
+          </div>
+            
+          <div class="copyright-c">
+            <p> &copy; 2021 | Shivam Chaudhary</p>
+          </div>
+        </div>
+      </footer>
+    
+    <script>
+        var colorGradient = 'linear-gradient(315deg, #d4418e 0%, #0652c5 74%)';
+        var textColor = '#fff'
+        //coding the sticky navbar section
+        var header = document.querySelector(".navigation");         
+        header.style.backgroundImage= colorGradient;            
+        //color for nav link
+        // var navLinks = document.querySelectorAll(".navigation ul li a");
+        // navLinks.forEach(navLink=>{
+        //     navLink.style.color = textColor;
+        // })
+
+        //Color for intro info container
+        var introinfoC = document.querySelector(".each-project-intro-info-c");      
+        introinfoC.style.backgroundImage= colorGradient; 
+        introinfoC.style.color=textColor;
+
+        //for footer
+        document.querySelector(".contact-means-c").style.backgroundImage = colorGradient;
+    </script>
+</body>
+</html>

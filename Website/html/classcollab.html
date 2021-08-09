@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+
     <title>Class Collab</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/eachproject.css">
@@ -14,10 +16,10 @@
     <nav class="navigation">  
         <input id="toggle-checkbox" type="checkbox">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <!-- <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact Me</a></li> -->
             
         </ul>
   
@@ -26,7 +28,7 @@
             <div class="line"></div>
             <div class="line"></div>
         </label>
-    </nav>
+      </nav>
 
       
     <div class="each-project-main-c">
@@ -87,9 +89,9 @@
         <div class="footer-bottom">
           <div class="contact-means-c">
             <div id="social-logos">
-              <a href="#"><span class="fab fa-facebook-f"></span></a>
-              <a href="#"><span class="fab fa-github"></span></a>
-              <a href="#"><span class="fab fa-linkedin"></span></a>          
+              <!-- <a href="#"><span class="fab fa-facebook-f"></span></a> -->
+              <a href="https://github.com/cvam77"><span class="fab fa-github"></span></a>
+              <a href="https://www.linkedin.com/in/shivamchaudhary10"><span class="fab fa-linkedin"></span></a>          
             </div>
             <div class="contactus-pair">
               <span id="font-logo" class="fas fa-envelope"></span>
@@ -102,5 +104,27 @@
           </div>
         </div>
       </footer>
+
+      <script>
+        var colorGradient = 'linear-gradient(315deg, #89d4cf 0%, #6e45e1 74%)';
+        var textColor = '#000'
+        //coding the sticky navbar section
+        var header = document.querySelector(".navigation");         
+        header.style.backgroundImage= colorGradient;            
+        //color for nav link
+        // var navLinks = document.querySelectorAll(".navigation ul li a");
+        // navLinks.forEach(navLink=>{
+        //     navLink.style.color = textColor;
+            
+        // })
+
+        //Color for intro info container
+        var introinfoC = document.querySelector(".each-project-intro-info-c");      
+        introinfoC.style.backgroundImage= colorGradient; 
+        introinfoC.style.color=textColor;
+
+        //for footer
+        document.querySelector(".contact-means-c").style.backgroundImage = colorGradient;
+    </script>
 </body>
 </html>

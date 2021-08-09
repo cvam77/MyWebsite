@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+
+    <title>Class Collab</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/eachproject.css">
+    <script  src="https://kit.fontawesome.com/97446b8f60.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="navigation">  
+        <input id="toggle-checkbox" type="checkbox">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <!-- <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact Me</a></li> -->
+            
+        </ul>
+  
+        <label for="toggle-checkbox" class="hamburger-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+      </nav>
+
+      
+    <div class="each-project-main-c">
+
+        <div class="each-project-landing">
+            <div class="empty-div"></div>
+
+            <div class="each-project-title-github-question-c">
+                <h2 class="each-project-main-title">Class Collab</h2>
+                <a href="https://github.com/cvam77/Classroom-Collab" ><p class="github-link">Github</p></a>
+                <!-- <p class="question-each-project">What's the easiest way to learn what people around you are interested in?</p> -->
+            </div>
+            
+            <div class="each-project-intro-c classcollab">
+                <div class="each-project-intro-info-c">
+                    <p class="each-project-intro-info">Every classroom is unique! If you put together the type of minds involved and the variety of knowledge passed in a classroom, you'll realize that no two classrooms are similar to each other. <span>Class Collab</span> epitomizes this notion! </p>
+                </div>
+                <div class="each-project-intro-pic-c classcollab">
+                    <img src="../images/Classroom Collab/class.jpg" alt="">
+                </div>
+            </div>
+
+            <p class="each-project-in-one-line">Class Collab provides a stack overflow-esque platform where the students of a classroom can create/join a channel, ask questions and share their learnings!</p>
+
+            <div class="each-project-feature-row-c">
+                <div class="each-feature-c left">
+                    <div class="each-project-feature-info-c">
+                        <p class="each-project-feature-info">Create a classroom channel!</p>
+                    </div>
+                    <div class="each-project-feature-pic-c">
+                        <img src="../images/Classroom Collab/createclass.png" alt="">
+                    </div>
+                </div>
+
+                <div class="each-feature-c right">
+                    <div class="each-project-feature-info-c">
+                        <p class="each-project-feature-info">Join a classroom channel!</p>
+                    </div>
+                    <div class="each-project-feature-pic-c">
+                        <img src="../images/Classroom Collab/joinclass.png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="each-project-intro-c class-collab-home-screen">
+                <div class="each-project-intro-info-c">
+                    <p class="each-project-intro-info">Once created/joined a class channel, you can navigate to all of them from the home screen. You are all good to start <span>asking</span> question or <span>sharing</span> your knowledge! </p>
+                </div>
+                <div class="each-project-intro-pic-c">
+                    <img src="../images/Classroom Collab/classcollabhome.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>            
+        <div class="footer-bottom">
+          <div class="contact-means-c">
+            <div id="social-logos">
+              <!-- <a href="#"><span class="fab fa-facebook-f"></span></a> -->
+              <a href="https://github.com/cvam77"><span class="fab fa-github"></span></a>
+              <a href="https://www.linkedin.com/in/shivamchaudhary10"><span class="fab fa-linkedin"></span></a>          
+            </div>
+            <div class="contactus-pair">
+              <span id="font-logo" class="fas fa-envelope"></span>
+              <h2>schaudhary@patriots.uttyler.edu  </h2>
+            </div>
+          </div>
+            
+          <div class="copyright-c">
+            <p> &copy; 2021 | Shivam Chaudhary</p>
+          </div>
+        </div>
+      </footer>
+
+      <script>
+        var colorGradient = 'linear-gradient(315deg, #89d4cf 0%, #6e45e1 74%)';
+        var textColor = '#000'
+        //coding the sticky navbar section
+        var header = document.querySelector(".navigation");         
+        header.style.backgroundImage= colorGradient;            
+        //color for nav link
+        // var navLinks = document.querySelectorAll(".navigation ul li a");
+        // navLinks.forEach(navLink=>{
+        //     navLink.style.color = textColor;
+            
+        // })
+
+        //Color for intro info container
+        var introinfoC = document.querySelector(".each-project-intro-info-c");      
+        introinfoC.style.backgroundImage= colorGradient; 
+        introinfoC.style.color=textColor;
+
+        //for footer
+        document.querySelector(".contact-means-c").style.backgroundImage = colorGradient;
+    </script>
+</body>
+</html>

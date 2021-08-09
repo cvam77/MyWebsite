@@ -1,6 +1,6 @@
 
 body{
-    height: 3500px;
+    height: 4500px;
 
 }
 
@@ -177,7 +177,7 @@ body{
 .each-project-title-c.two{
  
     background-color: #ffcd00;
-background-image: linear-gradient(315deg, #ffcd00 0%, #005238 74%);
+    background-image: linear-gradient(315deg, #ffcd00 0%, #005238 74%);
     color: #fff;
        
 }
@@ -199,10 +199,10 @@ background-image: linear-gradient(315deg, #ffcd00 0%, #005238 74%);
     background-image: linear-gradient(315deg, #d4418e 0%, #0652c5 74%);      
 }
 
-.each-project-title-c.watchman{ 
+/* .each-project-title-c.watchman{ 
     background-color: #537895;
     background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
-}
+} */
 
 .project-title{
     color: #fff;

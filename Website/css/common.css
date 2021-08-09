@@ -44,7 +44,9 @@ html{
     align-items: baseline;
     padding: 1.8rem 8rem;
     z-index: 3;
-    background-color: #E1C699;
+    /* background-color: #E1C699; */
+    background-color: #7fcec5;
+background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 74%);
     
     /* transition: 0.7s; */
 }
@@ -77,7 +79,7 @@ html{
     position: relative;
     margin: 0.1rem 2.8rem;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     letter-spacing: 0.2rem;
     font-weight: lighter;
     font-size: 2.4rem;
@@ -94,7 +96,7 @@ html{
     
     /* transform: scaleX(2); */
     border-radius: 1rem;
-    color: #fff;
+    color: #000;
 
 }
 
@@ -207,13 +209,13 @@ footer{
     width: 100%;
     height: auto;
     color: #d4d4d4;   
-    background: #8d7c60;    
+    background: #000;    
 }
 
 .contact-means-c{
     /* background-color: #1a1a1a; */
-    background-color: #8d7c60;
-background-image: linear-gradient(315deg, #8d7c60 0%, #000000 74%);
+    background-color: #7fcec5;
+    background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 74%);
 }
 
 #social-logos{
@@ -280,9 +282,6 @@ background-image: linear-gradient(315deg, #8d7c60 0%, #000000 74%);
 
 }
 
-.footer-bottom p{
-    background: #8d7c60;
-}
 
 @media screen and (max-width: 951px) {
 

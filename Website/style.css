@@ -63,7 +63,7 @@ p{
 .landing-parts{
     height: 100%;
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,13 +74,19 @@ p{
 .intro-c{
     font-size: 20px;
     padding: 0 80px;
+    letter-spacing: 1px;
+}
+
+.intro-c span{
+    color: #14557b;
+    font-weight: 700;
 }
 
 .pic-dimension-c{
     background-color: tan;
     width: 600px;
     height: 400px;
-    background: url('../Website/images/shivam.jpg');
+    background: url('./images/shivam.jpg');
     background-size: cover;
     box-shadow: 1.2rem 1.2rem 0.4rem rgba(0, 0, 0, .5);
 

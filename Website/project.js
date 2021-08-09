@@ -97,7 +97,7 @@ function init(){
   scene.add( plane2 );
   plane2.position.setX(-4.5);
   plane2.position.setY(3);
-  plane2.position.setZ(10);
+  plane2.position.setZ(15);
   // plane2.rotation.Y = 1;
 
 
@@ -126,7 +126,7 @@ function init(){
   scene.add( plane3 );
   plane3.position.setX(3);
   plane3.position.setY(3);
-  plane3.position.setZ(20);
+  plane3.position.setZ(30);
 
   //plane 4
   const classcollabTexture = new THREE.TextureLoader().load('./images/classcollab.png');
@@ -136,7 +136,7 @@ function init(){
   scene.add( plane4 );
   plane4.position.setX(-3);
   plane4.position.setY(-3);
-  plane4.position.setZ(30);
+  plane4.position.setZ(45);
 
   //plane 5
   const conferenceTexture = new THREE.TextureLoader().load('./images/conference.png');
@@ -146,7 +146,7 @@ function init(){
   scene.add( plane5 );
   plane5.position.setX(4.5);
   plane5.position.setY(3);
-  plane5.position.setZ(40);
+  plane5.position.setZ(60);
 
   //plane 6
 
@@ -204,11 +204,11 @@ window.addEventListener('scroll', function() {
     document.querySelector('.projects-title-contain').style.transform='translateY(0px)';
 
   }
-  translate(5,10,'one',1)
-  translate(15,21,'two',2)
-  translate(25,30,'three',1)
-  translate(35,40,'four',2)
-  translate(45,50,'five',1)
+  translate(5,15,'one',1)
+  translate(20,30,'two',2)
+  translate(35,45,'three',1)
+  translate(50,60,'four',2)
+  translate(65,75,'five',1)
   // translate(55,60,'watchman',2)
   
 })
