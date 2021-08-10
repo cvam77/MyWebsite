@@ -53,10 +53,10 @@ function init(){
   const ambientLight = new THREE.AmbientLight(0x404040,100);
   scene.add(ambientLight)
 
-  scene.add(new THREE.AxesHelper(500));
-  const gridHelper = new THREE.GridHelper(200,50);
-  // scene.add(lightHelper,gridHelper);
-  scene.add(gridHelper);  
+  // scene.add(new THREE.AxesHelper(500));
+  // const gridHelper = new THREE.GridHelper(200,50);
+  // // scene.add(lightHelper,gridHelper);
+  // scene.add(gridHelper);  
 
   // const gui = new dat.GUI();
   // const cameraFolder = gui.addFolder("Camera");

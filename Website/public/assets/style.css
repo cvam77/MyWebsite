@@ -75,6 +75,7 @@ p{
     font-size: 20px;
     padding: 0 80px;
     letter-spacing: 1px;
+    /* background-color: aqua; */
 }
 
 .intro-c span{
@@ -89,5 +90,39 @@ p{
     background: url('./images/shivam.jpg');
     background-size: cover;
     box-shadow: 1.2rem 1.2rem 0.4rem rgba(0, 0, 0, .5);
+}
 
+@media screen and (max-width: 1150px)
+{
+    .landing-c{
+        flex-direction: column;
+        height: 96vh;
+        margin-top: 64px;
+    }
+
+    .intro-c{
+        height: 280px;
+        font-size: 20px;
+        padding: 0 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* background-color: aqua; */
+    }
+
+    .my-pic-c{
+        height: 300px;
+        width: 100%;
+        /* background-color: antiquewhite; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pic-dimension-c{
+        
+        width: 400px;
+        height: 300px;
+     
+    }
 }
