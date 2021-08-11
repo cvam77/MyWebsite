@@ -28,6 +28,7 @@ canvas{
     left: 0;
     /* display: none; */
     /* top: 10%; */
+    margin-bottom: -64px;
 }
 
 main{

@@ -328,7 +328,7 @@
 }
 
 @media screen and (max-width: 1150px)
-{
+{   
     .question-each-project{
         font-size: 24px;
         margin-top: 16px;
@@ -346,7 +346,8 @@
     }
 
     .each-project-intro-info-c{    
-        height: 280px;                
+        height: auto;
+        padding: 24px 0;                
     }
 
     .each-project-intro-info-c.browse{    
@@ -380,7 +381,7 @@
     
     .each-project-in-one-line{
         /* font-size: 20px; */
-        padding: 32px 32px;
+        padding: 64px 32px;
         background-color: #f8f8ff;
         text-align: center;
     }
@@ -398,53 +399,102 @@
         padding: 32px 16px;
     }
 
-    /* css specific for chia uttyler */
+    /* css specific for chia uttyler */    
+    .nav-c{        
+        top: 10%;        
+    }   
+
+    /* css code for class collab specifically */
+    
+    .each-project-intro-pic-c.classcollab img{
+        width: 450px;
+        height: 450px;  
+    }
+
+    .each-project-in-one-line.classcollab{
+        padding-top: 80px;
+    }
+
+    .each-project-intro-c.class-collab-home-screen{
+        margin-bottom: 24px;
+    }
+    
+    .each-project-intro-c.class-collab-home-screen .each-project-intro-pic-c{
+        background-color: #ffcba4;
+
+    }
+}
+
+
+
+@media screen and (max-width: 800px)
+{
+    
+    /* css specific for chia uttyler */    
+    .each-project-title-github-question-c.chia .github-download-c{
+        font-size: 18px;
+    }
+
+    .each-project-main-title.chia~h2{
+        font-size: 2px;
+    }
+
     .chiauttyler-c{
-        /* background-color: teal; */
-        height: 600px;
-    }
-
-    .chiauttyler-c video{
-        position: absolute;
-        width: inherit;
-        height: inherit;
+        height: 440px;        
         
     }
 
-    .nav-c{
-        /* position: relative; */
-        height: 160px;
-        width: 100%;
-        /* top: 100%; */
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        
-    }
-    .chiauttyler-c .nav-c img{
-        height: 100%;
-        width: 800px;
+    .nav-c{        
+        top: 0%;        
     }
 
-    .chiauttyler-c .name-c{
-        width: inherit;
-        height: inherit;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        letter-spacing: 2px;
+    .chiauttyler-c .nav-c img{  
+        width: 480px;
     }
 
-    #uttyler{
-        color: orange;
-        font-size: 24px;
+    #uttyler{        
+        font-size: 16px;
     }
 
-    #chia{
-        color: #fff;
+    #chia{    
+        font-size: 19px;        
+    } 
+
+    /* classcollab */
+    .each-project-intro-c.class-collab-home-screen{
+        margin-bottom: 64px;
+    }
+    
+}
+
+@media screen and (max-width: 550px)
+{  
+    
+    /* virtual deadline */
+    .git-down-tokeepcenter-c{               
+        width: 50%;       
+    }
+
+    /* css specific for chia uttyler */    
+    .each-project-title-github-question-c.chia .each-project-main-title{
         font-size: 32px;
-        
     }
+    .chiauttyler-c{
+        height: 300px;
+    }
+    .nav-c{        
+        top: 0%;        
+    }
+
+    /* classcollab code */
+    .each-project-intro-c.class-collab-home-screen{
+        margin-bottom: 116px;
+    }
+
+    /* css code for conference tracker specifically */
+    .each-project-intro-pic-c.ctracker img{
+        width: 400px;
+        height: 500px;  
+    }
+
 }
