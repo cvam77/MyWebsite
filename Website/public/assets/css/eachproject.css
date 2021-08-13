@@ -347,7 +347,8 @@
 
     .each-project-intro-info-c{    
         height: auto;
-        padding: 24px 0;                
+        
+        padding: 24px 12px;                
     }
 
     .each-project-intro-info-c.browse{    
@@ -469,7 +470,10 @@
 
 @media screen and (max-width: 550px)
 {  
-    
+    .each-project-intro-info{
+        padding: 0 16px;
+    }
+
     /* virtual deadline */
     .git-down-tokeepcenter-c{               
         width: 50%;       
@@ -487,6 +491,11 @@
     }
 
     /* classcollab code */
+    .each-project-intro-info-c{    
+        font-size: 20px;
+                      
+    }
+    
     .each-project-intro-c.class-collab-home-screen{
         margin-bottom: 116px;
     }
@@ -497,4 +506,63 @@
         height: 500px;  
     }
 
+}
+
+@media screen and (max-width: 450px)
+{  
+
+
+    /* css specific for chia uttyler */    
+    .each-project-title-github-question-c.chia .each-project-main-title{
+        font-size: 32px;
+    }
+    .chiauttyler-c{
+        height: 300px;
+    }
+    .nav-c{
+        /* position: relative; */
+        height: 160px;
+        width: 100%;
+        top: 15%;
+        /* top: 100%; */
+        /* position: absolute;
+        display: flex;
+        justify-content: center; */
+        
+    }
+    .chiauttyler-c .nav-c img{
+        height: 125px;
+        width: 350px;
+    }
+
+    #uttyler{        
+        font-size: 11px;
+    }
+
+    #chia{    
+        font-size: 12px;        
+    } 
+   
+
+    /* css code for class collab specifically */
+    .each-project-intro-c.classcollab{
+        height: 700px;
+    }
+    .each-project-intro-pic-c.classcollab img{
+        width: 350px;
+        height: 350px;  
+        
+    }
+
+    /* css code for conference tracker */    
+    .each-project-intro-c.ctracker{
+        height: 630px;
+    }
+
+    .each-project-intro-pic-c.ctracker img{
+        width: 400px;
+        height: 400px;  
+        
+       
+    }
 }

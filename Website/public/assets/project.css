@@ -232,6 +232,9 @@ body{
 {
     .each-project-title-c{
         opacity: 0.8;
+        width: 250px;
+        height: 250px;
+        font-size: 16px;
     }
 
     .each-project.odd{
